@@ -3,7 +3,9 @@
     <li class="list-group-item active"> {{ item.firstName }} </li>
     <li class="list-group-item" appHighlight> {{ item.firstName }} {{ item.lastName }} </li>
     <li class="list-group-item"> {{ item.id }} </li>
-    <li class="list-group-item"> {{ item.email }} </li>
+    <li class="list-group-item">
+      <a [href]="item.email | domainOnly"> {{ item.email | domainOnly }} </a> 
+    </li>
     <li class="list-group-item">
       <span [ngSwitch]="item.gender">
         <p *ngSwitchCase="'Male'">MALE</p>

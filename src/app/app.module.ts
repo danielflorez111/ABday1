@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HighlightDirective } from './highlight.directive';
 import { ItemsComponent } from './items/items.component';
 import { ItemComponent } from './items/item/item.component';
+import { DomainOnlyPipe } from './domain-only.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     HighlightDirective,
     ItemsComponent,
-    ItemComponent
+    ItemComponent,
+    DomainOnlyPipe
   ],
   imports: [
     BrowserModule
